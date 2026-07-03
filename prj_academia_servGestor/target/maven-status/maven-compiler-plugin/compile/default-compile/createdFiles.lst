@@ -1,0 +1,4 @@
+com\sd\raul\prj_academia_servGestor\services\SistemasService.class
+com\sd\raul\prj_academia_servGestor\PrjAcademiaServGestorApplication.class
+com\sd\raul\prj_academia_servGestor\services\LoadBalancerService.class
+com\sd\raul\prj_academia_servGestor\controllers\SistemasController.class

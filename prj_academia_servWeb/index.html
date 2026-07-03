@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Academia - Sistema Gestor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function montarMenu() { $("#div_Menu").load("nav_bar.html"); }
+    </script>
+</head>
+<body onload="montarMenu()">
+
+<div id="div_Menu"></div>
+
+<div class="container mt-4">
+    <h4 class="mb-1">🏋️ Sistema de Gerenciamento de Academia</h4>
+    <p class="text-muted mb-4">Selecione um módulo para começar.</p>
+
+    <h6 class="text-uppercase text-muted mb-2" style="font-size:0.75rem; letter-spacing:1px;">Serviço 1 — PostgreSQL</h6>
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='planos.html'">
+                <div class="card-body">
+                    <div class="card-title">📋 Planos</div>
+                    <p class="card-text text-muted small">Planos de assinatura da academia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='clientes.html'">
+                <div class="card-body">
+                    <div class="card-title">👤 Clientes</div>
+                    <p class="card-text text-muted small">Alunos e membros cadastrados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='funcionarios.html'">
+                <div class="card-body">
+                    <div class="card-title">👔 Funcionários</div>
+                    <p class="card-text text-muted small">Instrutores, recepcionistas e gerentes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='modalidades.html'">
+                <div class="card-body">
+                    <div class="card-title">🏃 Modalidades</div>
+                    <p class="card-text text-muted small">Aulas coletivas oferecidas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="text-uppercase text-muted mb-2" style="font-size:0.75rem; letter-spacing:1px;">Serviço 2 — PostgreSQL</h6>
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='matriculas.html'">
+                <div class="card-body">
+                    <div class="card-title">📝 Matrículas</div>
+                    <p class="card-text text-muted small">Vínculo entre cliente e plano.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='pagamentos.html'">
+                <div class="card-body">
+                    <div class="card-title">💳 Pagamentos</div>
+                    <p class="card-text text-muted small">Registros financeiros das matrículas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="text-uppercase text-muted mb-2" style="font-size:0.75rem; letter-spacing:1px;">Serviço 3 — MongoDB</h6>
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='treinos.html'">
+                <div class="card-body">
+                    <div class="card-title">💪 Treinos</div>
+                    <p class="card-text text-muted small">Fichas de treino dos alunos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='avaliacoes.html'">
+                <div class="card-body">
+                    <div class="card-title">📊 Avaliações Físicas</div>
+                    <p class="card-text text-muted small">Avaliações periódicas dos alunos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="text-uppercase text-muted mb-2" style="font-size:0.75rem; letter-spacing:1px;">Relatórios & Sistema</h6>
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='clientes_planos.html'">
+                <div class="card-body">
+                    <div class="card-title">🔗 Clientes × Planos</div>
+                    <p class="card-text text-muted small">Clientes com seus planos vinculados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='planos_matriculas.html'">
+                <div class="card-body">
+                    <div class="card-title">📊 Planos × Matrículas</div>
+                    <p class="card-text text-muted small">Planos com suas matrículas ativas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <div class="card card-index" onclick="location.href='status.html'">
+                <div class="card-body">
+                    <div class="card-title">🟢 Status do Sistema</div>
+                    <p class="card-text text-muted small">Instâncias ativas do Serviço 1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
